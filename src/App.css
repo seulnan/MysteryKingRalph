@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "GapyeongHanseokbong";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/GapyeongHanseokbong-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GapyeongHanseokbong";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/GapyeongHanseokbong-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GapyeongHanseokbong";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/GapyeongHanseokbong-Regular.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@utility font-hanseokbong-des-title-700 {
+  font-family: "GapyeongHanseokbong", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 140%;
+  letter-spacing: -2.5%;
+}
+
+@utility font-hanseokbong-des-400 {
+  font-family: "GapyeongHanseokbong", sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 160%;
+  letter-spacing: -1%;
+}
+
+@utility font-hanseokbong-des-300 {
+  font-family: "GapyeongHanseokbong", sans-serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 160%;
+  letter-spacing: -1%;
+}
+
+@utility font-hanseokbong-title-700 {
+  font-family: "GapyeongHanseokbong", sans-serif;
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 110.00000000000001%;
+  letter-spacing: -1%;
+  color: #fef200;
+  -webkit-text-stroke: 5px #e50014;
+}
+
+@utility font-hanseokbong-subtitle-700 {
+  font-family: "GapyeongHanseokbong", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 110.00000000000001%;
+  letter-spacing: -1%;
+}
+
+@utility font-gmarket-btntext {
+  font-family: "GmarketSansMedium", sans-serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  line-height: 1.25rem;
+  letter-spacing: -2%;
+  text-align: center;
+}
