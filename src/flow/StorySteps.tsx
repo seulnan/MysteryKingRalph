@@ -13,16 +13,15 @@ export interface StoryStep {
 }
 
 export const StorySteps: StoryStep[] = [
-  { id: "start", element: <StartScreen /> },
-  { id: "intro", element: <IntroScene /> },
-  { id: "story", element: <StoryScene /> },
-  { id: "suspect-1", element: <SuspectOne /> },
-  { id: "suspect-2", element: <SuspectTwo /> },
-  { id: "suspect-3", element: <SuspectThree /> },
-  { id: "TextScene-1", element: <TextScene title="첫번째 용의자" subtitle="백설공주 조사" /> },
-  { id: "alibi-1", element: <AlibiOne /> },
+  // { id: "intro", element: <IntroScene /> },
+  // { id: "story", element: <StoryScene /> },
+  // { id: "suspect-1", element: <SuspectOne /> },
+  // { id: "suspect-2", element: <SuspectTwo /> },
+  // { id: "suspect-3", element: <SuspectThree /> },
+  // { id: "investigation-1", element: <TextScene title="첫번째 용의자" subtitle="백설공주 조사" /> },
+  // { id: "alibi-1", element: <AlibiOne /> },
   { id: "puzzle-1", element: <DwarfsPuzzle /> },
-  { id: "TextScene-2", element: <TextScene title="두번째 용의자" subtitle="라푼젤 조사" /> },
+  { id: "investigation-2", element: <TextScene title="두번째 용의자" subtitle="라푼젤 조사" /> },
   { id: "ending", element: <TextScene title="..는 다음에 공개" /> },
 
 ];
