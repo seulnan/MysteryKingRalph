@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { ReactTyped } from "react-typed";
+import { useFlow } from "../../contexts/FlowProvider.tsx";
 
 const Texts = [
   "과거 마녀가 건넨 독사과를 먹고 죽을 뻔한 사건을 겪었다.\n\n" + 
@@ -7,10 +9,19 @@ const Texts = [
 ];
 
 export default function SuspectOne() {
+  const { goNext } = useFlow();
+  const [isTypingDone, setIsTypingDone] = useState(false);
+  const handleClick = () => {
+    if (isTypingDone)
+      goNext();
+  }
+
   return (
-    <div className="relative flex w-[120rem] h-[67.5rem] bg-[#080A09] mx-auto overflow-hidden">
+    <div 
+      className="relative flex w-[120rem] h-[67.5rem] bg-[#080A09] mx-auto overflow-hidden"
+      onClick={handleClick}>
       <img 
-      src="/images/snowwhite_backgrond.png" 
+      src="/images/snowwhite_background.png" 
       alt="백설공주 배경"
       className="relative flex w-[120rem] h-[67.5rem] mx-auto"
       />
@@ -32,6 +43,8 @@ export default function SuspectOne() {
           loop={false}
           className="font-hanseokbong-des-300 absolute top-[18rem] left-[4rem] 
           text-white text-[2.25rem] tracking-[-0.0375rem] leading-[160%] w-[51.25rem] [Gapyeong Hanseokbong]"
+          style={{ whiteSpace: 'pre-line' }}
+          onComplete={() => setIsTypingDone(true)}
           />
       </div>
     </div>
