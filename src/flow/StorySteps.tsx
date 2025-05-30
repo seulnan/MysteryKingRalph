@@ -24,5 +24,4 @@ export const StorySteps: StoryStep[] = [
   { id: "puzzle-1", element: <DwarfsPuzzle /> },
   { id: "investigation-2", element: <TextScene title="두번째 용의자" subtitle="라푼젤 조사" /> },
   { id: "ending", element: <TextScene title="..는 다음에 공개" /> },
-
 ];

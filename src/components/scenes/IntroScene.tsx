@@ -7,14 +7,14 @@ export default function IntroScene() {
   return (
     <div className="fixed inset-0 flex items-center justify-center overflow-hidden bg-[#080A09]">
       <div
-        className="relative w-[120rem] h-[67.5rem] max-w-screen max-h-screen mx-auto aspect-w-16 aspect-h-9"
+        className="relative w-[100vw] h-auto aspect-[16/9]"
         onClick={goNext}
         style={{ objectFit: 'contain', aspectRatio: '16 / 9' }}
       >
         <img
           src="/images/princesses.png"
           alt="공주들"
-          className="w-[55.313rem] h-[62.5rem] absolute top-20 left-6 z-20"
+          className="absolute top-[10.4vh] left-[5vw] w-[46vw] h-[52vh] z-20"
         />
         <img
           src="/images/witch.png"
