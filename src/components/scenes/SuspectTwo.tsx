@@ -18,35 +18,42 @@ export default function SuspectTwo() {
   }
 
   return (
-    <div 
-      className="relative flex w-[120rem] h-[67.5rem] bg-[#080A09] mx-auto overflow-hidden"
-      onClick={handleClick}>
-      <img 
-      src="/images/rapunzel_background.png" 
-      alt="라푼젤 배경"
-      className="relative flex w-[120rem] h-[67.5rem] mx-auto"
-      />
-      <img
-        src="/images/rapunzel.png"
-        alt="라푼젤"
-        className="absolute top-[5.3rem] left-[13rem] w-[37.625rem] h-[63.9375rem]"
-      />
-      <div className="absolute top-[8.56rem] left-[52.9rem] w-[60.125rem] h-[50.365rem] rounded-[1.25rem] bg-[rgba(0,0,0,0.6)]
+    <div className="fixed inset-0 flex items-center justify-center overflow-hidden bg-[#080A09]">
+      <div
+        className="relative w-[120rem] h-[67.5rem] transform origin-center"
+        onClick={handleClick}
+        style={{
+          transform: 'scale(min(100vw/1920,100vh/1080))',
+          transformOrigin: 'center'
+        }}
+      >
+        <img
+          src="/images/rapunzel_background.png"
+          alt="라푼젤 배경"
+          className="relative flex w-[120rem] h-[67.5rem] mx-auto"
+        />
+        <img
+          src="/images/rapunzel.png"
+          alt="라푼젤"
+          className="absolute top-[5.3rem] left-[13rem] w-[37.625rem] h-[63.9375rem]"
+        />
+        <div className="absolute top-[8.56rem] left-[52.9rem] w-[60.125rem] h-[50.365rem] rounded-[1.25rem] bg-[rgba(0,0,0,0.6)]
 ]">
-        <p className="font-hanseokbong-subtitle-700 absolute top-[8rem] left-[4rem] 
+          <p className="font-hanseokbong-subtitle-700 absolute top-[8rem] left-[4rem] 
           text-white text-[3rem] tracking-[-0.075rem]">
-          {`두번째 용의자 : 라푼젤`}
-        </p>
-        <ReactTyped
-          strings={Texts}
-          typeSpeed={50}
-          backSpeed={30}
-          loop={false}
-          className="font-hanseokbong-des-300 absolute top-[18rem] left-[4rem] 
+            {`두번째 용의자 : 라푼젤`}
+          </p>
+          <ReactTyped
+            strings={Texts}
+            typeSpeed={50}
+            backSpeed={30}
+            loop={false}
+            className="font-hanseokbong-des-300 absolute top-[18rem] left-[4rem] 
           text-white text-[2.25rem] tracking-[-0.0375rem] leading-[160%] w-[51.25rem]"
-          style={{ whiteSpace: 'pre-line' }}
-          onComplete={() => setIsTypingDone(true)}
-          />
+            style={{ whiteSpace: 'pre-line' }}
+            onComplete={() => setIsTypingDone(true)}
+            />
+        </div>
       </div>
     </div>
   );
