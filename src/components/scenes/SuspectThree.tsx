@@ -41,7 +41,7 @@ export default function SuspectThree() {
 ]">
           <p className="font-hanseokbong-subtitle-700 absolute top-[8rem] left-[4rem] 
           text-white text-[3rem] tracking-[-0.075rem]">
-            {`두번째 용의자 : 인어공주`}
+            {`세번째 용의자 : 인어공주`}
           </p>
           <ReactTyped
             strings={Texts}
