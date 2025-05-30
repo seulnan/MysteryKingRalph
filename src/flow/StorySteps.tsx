@@ -12,10 +12,10 @@ export interface StoryStep {
 }
 
 export const StorySteps: StoryStep[] = [
-  // { id: "intro", element: <IntroScene /> },
-  // { id: "story", element: <StoryScene /> },
-  // { id: "suspect-1", element: <SuspectOne /> },
-  // { id: "suspect-2", element: <SuspectTwo /> },
+  { id: "intro", element: <IntroScene /> },
+  { id: "story", element: <StoryScene /> },
+  { id: "suspect-1", element: <SuspectOne /> },
+  { id: "suspect-2", element: <SuspectTwo /> },
   { id: "suspect-3", element: <SuspectThree /> },
   { id: "puzzle-1", element: <DwarfsPuzzle /> },
   { id: "ending", element: <EndingForNext /> },
