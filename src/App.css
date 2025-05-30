@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "GapyeongHanseokbong";
+  font-family: "GapyeongHanseokbongBold";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/GapyeongHanseokbong-Bold.woff2")
     format("woff2");
   font-weight: 700;
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "GapyeongHanseokbong";
+  font-family: "GapyeongHanseokbongLight";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/GapyeongHanseokbong-Light.woff2")
     format("woff2");
   font-weight: 300;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: "GapyeongHanseokbong";
+  font-family: "GapyeongHanseokbongRegular";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/GapyeongHanseokbong-Regular.woff2")
     format("woff2");
   font-weight: 300;
@@ -33,7 +33,7 @@
 }
 
 @utility font-hanseokbong-des-title-700 {
-  font-family: "GapyeongHanseokbong", sans-serif;
+  font-family: "GapyeongHanseokbongBold", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   line-height: 140%;
@@ -41,7 +41,7 @@
 }
 
 @utility font-hanseokbong-des-400 {
-  font-family: "GapyeongHanseokbong", sans-serif;
+  font-family: "GapyeongHanseokbongLight", sans-serif;
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 160%;
@@ -49,7 +49,7 @@
 }
 
 @utility font-hanseokbong-des-300 {
-  font-family: "GapyeongHanseokbong", sans-serif;
+  font-family: "GapyeongHanseokbongLight", sans-serif;
   font-weight: 300;
   font-size: 2.25rem;
   line-height: 160%;
@@ -57,7 +57,7 @@
 }
 
 @utility font-hanseokbong-title-700 {
-  font-family: "GapyeongHanseokbong", sans-serif;
+  font-family: "GapyeongHanseokbongBold", sans-serif;
   font-weight: 700;
   font-size: 7rem;
   line-height: 110.00000000000001%;
@@ -67,7 +67,7 @@
 }
 
 @utility font-hanseokbong-subtitle-700 {
-  font-family: "GapyeongHanseokbong", sans-serif;
+  font-family: "GapyeongHanseokbongRegular", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 110.00000000000001%;
