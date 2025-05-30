@@ -21,17 +21,14 @@ export default function AlibiOne() {
   return (
     <div className="fixed inset-0 flex items-center justify-center overflow-hidden bg-[#080A09]">
       <div
-        className="relative w-[120rem] h-[67.5rem] transform origin-center"
+        className="relative w-[120rem] h-[67.5rem] max-w-screen max-h-screen mx-auto aspect-w-16 aspect-h-9"
         onClick={handleClick}
-        style={{
-          transform: 'scale(min(100vw/1920,100vh/1080))',
-          transformOrigin: 'center'
-        }}
+        style={{ objectFit: 'contain', aspectRatio: '16 / 9' }}
       >
         <img
           src="/images/snowwhite_background.png"
           alt="백설공주 배경"
-          className="relative flex w-[120rem] h-[67.5rem] mx-auto"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <img
           src="/images/snowwhite.png"

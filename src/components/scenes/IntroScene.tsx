@@ -7,11 +7,9 @@ export default function IntroScene() {
   return (
     <div className="fixed inset-0 flex items-center justify-center overflow-hidden bg-[#080A09]">
       <div
-        className="relative w-[120rem] h-[67.5rem] transform origin-center"
-        style={{
-          transform: 'scale(min(100vw/1920,100vh/1080))',
-          transformOrigin: 'center'
-        }}
+        className="relative w-[120rem] h-[67.5rem] max-w-screen max-h-screen mx-auto aspect-w-16 aspect-h-9"
+        onClick={goNext}
+        style={{ objectFit: 'contain', aspectRatio: '16 / 9' }}
       >
         <img
           src="/images/princesses.png"

@@ -11,12 +11,9 @@ export default function TextScene({ title, subtitle }: TextSceneProps) {
   return (
     <div className="fixed inset-0 flex items-center justify-center overflow-hidden bg-[#080A09]">
       <div
-        className="relative w-[120rem] h-[67.5rem] transform origin-center flex items-center justify-center"
+        className="relative w-[120rem] h-[67.5rem] max-w-screen max-h-screen mx-auto aspect-w-16 aspect-h-9 flex items-center justify-center"
         onClick={goNext}
-        style={{
-          transform: 'scale(min(100vw/1920,100vh/1080))',
-          transformOrigin: 'center'
-        }}
+        style={{ objectFit: 'contain', aspectRatio: '16 / 9' }}
       >
         <h1 className="font-hanseokbong-des-title-700 text-center text-white leading-[140%] tracking-[-0.075rem]">
           {title}

@@ -24,24 +24,21 @@ export default function StoryScene() {
   return (
     <div className="fixed inset-0 flex items-center justify-center overflow-hidden bg-[#080A09]">
       <div
-        className="relative w-[120rem] h-[67.5rem] transform origin-center"
+        className="relative w-[120rem] h-[67.5rem] max-w-screen max-h-screen mx-auto aspect-w-16 aspect-h-9"
         onClick={handleClick}
-        style={{
-          transform: 'scale(min(100vw/1920,100vh/1080))',
-          transformOrigin: 'center'
-        }}
+        style={{ objectFit: 'contain', aspectRatio: '16 / 9' }}
       >
         <img
           src="/images/witch.png"
           alt="죽은 마녀"
-          className="w-[119rem] h-[45.938rem] absolute top-[10.813rem] left-[26.75rem] mix-blend-luminosity"
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <ReactTyped
           strings={StoryTexts}
           typeSpeed={50}
           backSpeed={30}
           loop={false}
-          className="font-hanseokbong-des-400 text-[2.25rem] leading-[160%] absolute top-[22rem] left-[7.375rem] text-white tracking-[-0.0225rem]
+          className="font-hanseokbong-des-400 absolute top-[22rem] left-[7.375rem] text-white tracking-[-0.0225rem]
           w-[105.25rem] h-[30.5rem]"
           style={{ whiteSpace: 'pre-line' }}
           onComplete={() => setIsTypingDone(true)}
