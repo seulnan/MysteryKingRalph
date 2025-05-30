@@ -34,7 +34,7 @@ export default function SuspectTwo() {
       <div className="absolute top-[8.56rem] left-[52.9rem] w-[60.125rem] h-[50.365rem] rounded-[1.25rem] bg-[rgba(0,0,0,0.6)]
 ]">
         <p className="font-hanseokbong-subtitle-700 absolute top-[8rem] left-[4rem] 
-          text-white tezt-[3rem] tracking-[-0.075rem]">
+          text-white text-[3rem] tracking-[-0.075rem]">
           {`두번째 용의자 : 라푼젤`}
         </p>
         <ReactTyped
@@ -43,7 +43,7 @@ export default function SuspectTwo() {
           backSpeed={30}
           loop={false}
           className="font-hanseokbong-des-300 absolute top-[18rem] left-[4rem] 
-          text-white text-[2.25rem] tracking-[-0.0375rem] leading-[160%] w-[51.25rem] [Gapyeong Hanseokbong]"
+          text-white text-[2.25rem] tracking-[-0.0375rem] leading-[160%] w-[51.25rem]"
           style={{ whiteSpace: 'pre-line' }}
           onComplete={() => setIsTypingDone(true)}
           />

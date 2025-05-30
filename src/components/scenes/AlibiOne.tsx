@@ -3,12 +3,14 @@ import { ReactTyped } from "react-typed";
 import { useFlow } from "../../contexts/FlowProvider.tsx";
 
 const Texts = [
-  "과거 마녀가 건넨 독사과를 먹고 죽을 뻔한 사건을 겪었다.\n\n" + 
-  "이후 심각한 트라우마로 인해 과일을 입에 대지 못하게 되었고, 결국 비타민 결핍으로 괴혈병에 걸렸다.\n" +
-  "그녀 곁엔 언제나 충직한 일곱 난쟁이들이 함께하고 있다."
+  "저는 사건 추정 시각 내내 난쟁이 오두막 안에 있었습니다.\n" +
+  "도프와 해피는 밖에서 장작을 패고 있었고,\n" +
+  "저는 두리번이 끓이던 수프에 허브를 넣고 있었습니다.\n\n" +
+  "20시 정각, 벽난로 위 뻐꾸기 시계가 종을 치는 소리를 우리 모두 들었습니다.\n" +
+  "그 시간 동안 난쟁이 세 명이 제 곁을 지켜봤으니 언제든 확인해 보셔도 됩니다."
 ];
 
-export default function SuspectOne() {
+export default function AlibiOne() {
   const { goNext } = useFlow();
   const [isTypingDone, setIsTypingDone] = useState(false);
   const handleClick = () => {
@@ -32,17 +34,17 @@ export default function SuspectOne() {
       />
       <div className="absolute top-[8.56rem] left-[52.9rem] w-[60.125rem] h-[50.365rem] rounded-[1.25rem] bg-[rgba(0,0,0,0.6)]
 ]">
-        <p className="font-hanseokbong-subtitle-700 absolute top-[8rem] left-[4rem] 
+        <p className="font-hanseokbong-subtitle-700 absolute top-[6.3rem] left-[4rem] 
           text-white text-[3rem] tracking-[-0.075rem]">
-          {`첫번째 용의자 : 백설 공주`}
+          {`백설 공주의 증언`}
         </p>
         <ReactTyped
           strings={Texts}
           typeSpeed={50}
           backSpeed={30}
           loop={false}
-          className="font-hanseokbong-des-300 absolute top-[18rem] left-[4rem] 
-          text-white text-[2.25rem] tracking-[-0.0375rem] leading-[160%] w-[51.25rem]"
+          className="font-hanseokbong-des-300 absolute top-[15.12rem] left-[4rem] 
+          text-white text-[2.25rem] tracking-[-0.0375rem] leading-[160%] w-[51.25rem] [Gapyeong Hanseokbong]"
           style={{ whiteSpace: 'pre-line' }}
           onComplete={() => setIsTypingDone(true)}
           />
