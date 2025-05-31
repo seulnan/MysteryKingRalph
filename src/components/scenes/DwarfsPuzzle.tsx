@@ -72,7 +72,7 @@ export default function DwarfsPuzzle() { // 함수 이름 수정
           transition-opacity duration-700 ${clickCount >= 2 ? 'opacity-100' : 'opacity-0'}`}>
             <p className="font-hanseokbong-subtitle-700 absolute top-[0.625rem] left-1/2
             text-white text-[1rem] leading-[140%] tracking-[-0.075rem]" style={{ transform: 'translateX(-50%)' }}>도프</p> {/* 중앙 정렬 스타일 추가 */}
-            <div className="absolute top-[2.5rem] left-[1.31rem] rounded-[0.75rem] bg-[#080A09]">
+            <div className="absolute top-[2.5rem] left-[0.56rem] rounded-[0.75rem] bg-[#080A09]">
               <img
                 src="/images/dwarf_background.png"
                 alt="난쟁이 배경"
