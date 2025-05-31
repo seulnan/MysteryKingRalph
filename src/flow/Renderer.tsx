@@ -60,7 +60,7 @@ export const FlowRenderer = () => {
       if (audio3Ref.current?.paused) {
         audio3Ref.current?.play().catch(error => console.error("Error playing BGM2:", error));
       }
-    } else if (['investigation-2'].includes(currentStepId)) {
+    } else if (['investigation-2', 'ending'].includes(currentStepId)) {
       // 브금4 재생, 브금3 중지
       if (!audio3Ref.current?.paused) {
         audio3Ref.current.pause();
